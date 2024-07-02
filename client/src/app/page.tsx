@@ -9,16 +9,17 @@ export default async function Home() {
 
   return (
     <section className="min-h-screen bg-grid-zinc-50">
+      <div className="text-center flex flex-col items-center">
+        <h1 className="relative leading-snug w-fit tracking-tight text-balance mt-16 font-bold text-[#f43f5e] text-5xl">
+          Vote Stream App
+        </h1>
+      </div>
       {/* "MaxWidthWrapper Compoent is only used to apply uniform styling like margins, padding to all the child component present inside." */}
-      <MaxWidthWrapper className="relative pb-24 pt-10 sm:pb-32 lg:pt-24 xl:pt-32 lg:pb-52">
-        <div className="hidden lg:block absolute inset-0 top-0">
-          {/* Circle */}
-        </div>
-
+      <MaxWidthWrapper className="relative pb-24 sm:pb-32 lg:pt-10 xl:pt-5 lg:pb-52">
         {/* App Headline */}
         <div className="px-6 lg:px-0 lg:pt-4">
           <div className="relative mx-auto text-center flex flex-col items-center">
-            <h1 className="relative leading-snug w-fit tracking-tight text-balance mt-16 font-bold text-gray-900 text-5xl">
+            <h1 className="relative leading-snug w-fit tracking-tight text-balance mt-16 font-bold text-gray-900 text-3xl">
               What do you think about ...
             </h1>
 

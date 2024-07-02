@@ -46,7 +46,7 @@ export const submitComment = async ({
   // Incrementing served request
   await redis.incr("served-request");
 
-  // Publish the words in the channel so that whoever listens to that channel will recieve the message
+  // Publish the words in the channel so that whoever listens to that channel will recieve the message. This will go the backend server and backend server will trigger "scoket.io" event and forwards the message to all the users who are connected to this room
   await redis.publish(`room:${topicName}`, words);
 
   return comment;
